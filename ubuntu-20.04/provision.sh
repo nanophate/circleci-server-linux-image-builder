@@ -13,11 +13,11 @@ cp -r circleci-provision-scripts /opt/circleci-provision-scripts
 circleci-install base_requirements && circleci-install circleci_specific
 
 # Installing Java early because a few things have it as a dependency
-circleci-install java openjdk8
-circleci-install java openjdk11
-circleci-install maven 3.8.3
-circleci-install gradle 7.1.1
-circleci-install ant
+# circleci-install java openjdk8
+# circleci-install java openjdk11
+# circleci-install maven 3.8.3
+# circleci-install gradle 7.1.1
+# circleci-install ant
 
 for package in sysadmin devtools jq yq; do circleci-install $package; done
 
