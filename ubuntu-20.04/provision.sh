@@ -44,9 +44,9 @@ circleci-install golang 1.16.6
 circleci-install ruby 3.0.2
 sudo -H -i -u ${CIRCLECI_USER} rvm use 3.0.2 --default
 
-circleci-install clojure 2.9.6
+# circleci-install clojure 2.9.6
 
-circleci-install scala 1.5.5
+# circleci-install scala 1.5.5
 
 circleci-install snap
 
