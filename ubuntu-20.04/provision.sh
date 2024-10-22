@@ -56,7 +56,7 @@ circleci-install docker_compose 1.29.2
 
 circleci-install socat
 
-# circleci-install nsenter
+circleci-install nsenter
 
 # For some reason dpkg might start throwing errors after VM creation
 # auto correction allows to avoid
