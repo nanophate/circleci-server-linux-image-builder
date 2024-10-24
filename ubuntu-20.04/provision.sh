@@ -13,11 +13,11 @@ cp -r circleci-provision-scripts /opt/circleci-provision-scripts
 circleci-install base_requirements && circleci-install circleci_specific
 
 # Installing Java early because a few things have it as a dependency
-circleci-install java openjdk8
-circleci-install java openjdk11
-circleci-install maven 3.8.3
-circleci-install gradle 7.1.1
-circleci-install ant
+# circleci-install java openjdk8
+# circleci-install java openjdk11
+# circleci-install maven 3.8.3
+# circleci-install gradle 7.1.1
+# circleci-install ant
 
 for package in sysadmin devtools jq yq; do circleci-install $package; done
 
@@ -44,9 +44,9 @@ circleci-install golang 1.16.6
 circleci-install ruby 3.0.2
 sudo -H -i -u ${CIRCLECI_USER} rvm use 3.0.2 --default
 
-circleci-install clojure 2.9.6
+# circleci-install clojure 2.9.6
 
-circleci-install scala 1.5.5
+# circleci-install scala 1.5.5
 
 circleci-install snap
 
